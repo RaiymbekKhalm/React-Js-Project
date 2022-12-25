@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Items from './components/Items';
+import About from './components/About';
+import Contacts from './components/Contacts';
 
 class App extends React.Component {
   constructor(props) {
@@ -68,9 +71,26 @@ class App extends React.Component {
   render() {
       return (
         <div className='wrapper'>
-          <Header orders={this.state.orders} onDelete={this.deleteOrder} />
-          <Items items={this.state.items} onAdd={this.addToOrder} />
-          <Footer />
+          <Router>
+            <Header orders={this.state.orders} onDelete={this.deleteOrder} />
+            
+            <Switch>
+              <Route exact path="/">
+                <Items items={this.state.items} onAdd={this.addToOrder} />
+              </Route>
+
+              <Route path ="/about">
+                <About />
+              </Route>
+
+              <Route path ="/contacts">
+                <Contacts />
+              </Route>
+
+            </Switch>
+
+            <Footer />
+          </Router>
         </div>
     );
   }

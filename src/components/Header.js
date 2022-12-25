@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { FaShoppingCart } from "react-icons/fa";
 import Order from './Order';
+import {Link} from 'react-router-dom';
 
 const showOrders = (props) => {
     let sum = 0;
@@ -28,10 +29,10 @@ export default function Header(props) {
   return (
     <header>
         <div>
-            <span className='logo'>House Garden</span>
+        <Link to='/'><span className='logo'>House Garden</span></Link>
             <ul className='nav'>
-                <li>About us</li>
-                <li>Contacts</li>
+                <Link to='/about'><li>About</li></Link>
+                <Link to='/contacts'><li>Contacts</li></Link>
             </ul>
             <FaShoppingCart onClick={() => setCartOpen(cartOpen = !cartOpen)} className={`shop-cart-button ${cartOpen && 'active'}`} />
 
@@ -43,7 +44,6 @@ export default function Header(props) {
             )}
 
         </div>
-        <div className='presentation'></div>
     </header>
   )
 }

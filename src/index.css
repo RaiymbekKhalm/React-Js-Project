@@ -118,7 +118,7 @@ header .shop-cart .sum {
   text-align: center;
 }
 
-header .presentation {
+.presentation {
   margin: 50px 0;
   background: url('./img/main-pic.jpg') no-repeat;
   width: 100%;
@@ -130,7 +130,7 @@ header .presentation {
   position: relative;
 }
 
-header .presentation::after {
+.presentation::after {
   content: 'All you need for your indoor jungle!';
   position: absolute;
   top: 100px;
@@ -141,7 +141,7 @@ header .presentation::after {
   color: #fff;
 }
 
-header .presentation::before {
+.presentation::before {
   content: 'Plants, pots, accessories & more!';
   position: absolute;
   top: 250px;
@@ -211,3 +211,134 @@ footer {
   margin-top: 100px;
 }
 
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 150px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contactpage h2{
+  color: #04AA6D;
+}
+
+.contactpage span{
+  font-size: 18px;
+}
+
+.container label {
+  font-size: 20px;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 15px;
+  background-color: #d0ffda;
+  padding: 20px;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  height: 500px;
+
+}
+
+.contactinfo {
+  display: inline;
+}
+
+.contactinfo h3 {
+  color: #04AA6D;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contactinfo span {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.aboutContent {
+  width: 100%;
+  display: block;
+}
+
+.aboutDesc {
+  width: 100%;
+  height: 320px;
+  margin: 25px;
+}
+
+.aboutDesc img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  display: block;
+}
+
+.imgRight {
+  float: right;
+}
+
+.imgLeft {
+  float: left;
+}
+
+.aboutContent h4{
+  color: #04AA6D;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.aboutContent span{
+  font-size: 20px;
+}
+
+.aboutcon-left{
+  padding: 20px;
+  margin-right: 350px;
+  height: 265px;
+  background-color: #dcfff2;
+  border-radius: 20px;
+}
+
+.aboutcon-right{
+  padding: 20px;
+  margin-left: 350px;
+  height: 265px;
+  background-color: #dcfff2;
+  border-radius: 20px;
+}
